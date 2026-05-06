@@ -1,0 +1,11 @@
+source,target,weight
+Lojistik_Merkezi,Kadikoy_Sube,15
+Lojistik_Merkezi,Uskudar_Sube,10
+Kadikoy_Sube,Uskudar_Sube,5
+Kadikoy_Sube,Maltepe_Sube,25
+Uskudar_Sube,Umraniye_Sube,20
+Umraniye_Sube,Maltepe_Sube,12
+Umraniye_Sube,Sancaktepe_Sube,30
+Maltepe_Sube,Sancaktepe_Sube,10
+Sancaktepe_Sube,Tuzla_Depo,15
+Maltepe_Sube,Tuzla_Depo,22
