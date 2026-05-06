@@ -1,35 +1,32 @@
-\# E-Ticaret Lojistik Dağıtım Ağı Optimizasyonu
+**E-Commerce Logistics Network Optimization**  
+MIS Project: Supply Chain Cost Minimization using Dijkstra's Algorithm
 
-\#\# 1\. Real-World Problem Context  
-İstanbul genelinde faaliyet gösteren bir e-ticaret firmasının lojistik maliyetlerini optimize etmesi gerekmektedir.
+**Project Overview**  
+This project addresses a real-world logistics challenge for an Istanbul-based e-commerce firm. The primary objective is to determine the most cost-effective transportation routes between a central logistics hub and various regional warehouses using graph theory and network optimization techniques.
 
-\#\# 2\. Problem Definition  
-Lojistik merkezinden çıkan ürünlerin hedef depolara en düşük nakliye maliyetiyle ulaştırılması amaçlanmıştır.
+**Tech Stack**  
+**Language:** Python 3.14  
+**Libraries:**  NetworkX (Graph modeling and pathfinding),  Pandas (Data handling), Matplotlib (Network visualization)
 
-\#\# 3\. Network Model  
-\- \*\*Düğümler (Nodes):\*\* Depolar ve şubeler.  
-\- \*\*Kenarlar (Edges):\*\* Nakliye hatları.  
-\- \*\*Ağırlıklar (Weights):\*\* Birim nakliye maliyeti (TL).
+Network Architecture  
+The logistics network is modeled as a weighted undirected graph:  
+**Nodes:** Represent warehouses and distribution branches (e.g., Kadıköy, Üsküdar, Tuzla).  
+**Edges:** Represent the physical transportation routes between locations.  
+**Weights:** Represent the shipping costs in Turkish Lira (TL).
 
-\#\# 4\. Nodes and Edges  
-Ağ yapısında toplam 7 düğüm ve 10 kenar bulunmaktadır. Veri kaynağı: \`data/network\_data.csv\`.
+**Algorithm & Logic**  
+I implemented Dijkstra’s Algorithm to solve the shortest path problem. The algorithm systematically explores the network to find the path that minimizes the cumulative weight (cost) from the source node (Lojistik\_Merkezi) to the destination node (Tuzla\_Depo).
 
-\#\# 5\. Selected Algorithm  
-Maliyet minimizasyonu için \*\*Dijkstra En Kısa Yol (Shortest Path)\*\* algoritması tercih edilmiştir.
+**Results & Visualization**  
+Upon execution, the system generates a visual representation of the network and outputs the optimal route.
 
-\#\# 6\. Python Implementation  
-Kodlama sürecinde \`NetworkX\` ile ağ yapısı kurulmuş, \`Matplotlib\` ile görselleştirilmiştir.
+**Optimal Route:** Lojistik\_Merkezi \-\> Uskudar\_Sube \-\> Umraniye\_Sube \-\> Maltepe\_Sube \-\> Sancaktepe\_Sube \-\> Tuzla\_Depo  
+**Minimum Cost:** 67 TL
 
-\#\# 7\. Results  
-Terminal çıktısına göre belirlenen rota:   
-\*\*(Buraya Terminaldeki Rota ve Maliyet sonucunu yaz\!)\*\*
+The visualization is automatically saved to the \`/results\` directory as network\_visualization.png
 
-\#\# 8\. Managerial Interpretation  
-Elde edilen sonuçlar, işletmenin sevkiyat planlamasında veri odaklı modeller kullanarak operasyonel giderleri düşürebileceğini kanıtlamaktadır.
-
-\#\# 9\. How to Run the Code  
-1\. \`python3 \-m pip install \-r requirements.txt\`  
-2\. \`python3 src/solution.py\`
-
-\#\# 10\. References  
-Bkz: \`references/references.md\`  
+**How to Run**  
+1\. Ensure Python is installed.  
+2\. Install dependencies:  
+   \`\`\`bash  
+   pip install \-r requirements.txt
