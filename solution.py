@@ -45,7 +45,7 @@ nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=2500, font_siz
 edge_labels = nx.get_edge_attributes(G, 'weight')
 nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
 
-plt.title("E-Commerce Logistics Network Optimization (The Shortest Way)")
+plt.title("E-Ticaret Lojistik Dağıtım Ağı Optimizasyonu (En Kısa Yol)")
 
 # 5. Sonuçları Kaydetme
 results_dir = 'results'
