@@ -1,0 +1,2 @@
+﻿Rota: Lojistik_Merkezi -> Kadikoy_Sube -> Maltepe_Sube -> Tuzla_Depo
+Toplam Minimum Maliyet: 62 TL
