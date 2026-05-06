@@ -23,7 +23,7 @@ Upon execution, the system generates a visual representation of the network and 
 **Optimal Route:** Lojistik\_Merkezi \-\> Uskudar\_Sube \-\> Umraniye\_Sube \-\> Maltepe\_Sube \-\> Sancaktepe\_Sube \-\> Tuzla\_Depo  
 **Minimum Cost:** 67 TL
 
-The visualization is automatically saved to the \`/results\` directory as network\_visualization.png
+The visualization is automatically saved to the \'/results\' directory as 'network\_visualization.png'
 
 **How to Run**  
 1\. Ensure Python is installed.  
